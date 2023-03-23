@@ -44,3 +44,8 @@ int no_int_error(unsigned int line_number);
 int f_open_error(char *filename);
 int usage_error(void);
 int malloc_error(void);
+int pop_error(unsigned int line_number);
+int div_error(unsigned int line_number);
+int pint_error(unsigned int line_number);
+int pchar_error(unsigned int line_number char *message);
+int short_stack_error(unsigned int line_number, char *op);

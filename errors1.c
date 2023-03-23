@@ -1,16 +1,17 @@
 #include "monty.h"
 
-int unknown_op_error(char *opcode, unsigned int line_number)
-int no_int_error(unsigned int line_number)
-int f_open_error(char *filename)
-int usage_error(void)
-int malloc_error(void)
+int unknown_op_error(char *opcode, unsigned int line_number);
+int no_int_error(unsigned int line_number);
+int f_open_error(char *filename);
+int usage_error(void);
+int malloc_error(void);
 
-/** unknown_op_error -prints any unknown instructions messages
- * @opcode: operation to perform
- * @line_number: bytecodes where eror occured.
+/**
+ * unknown_op_error - Prints unknown instruction error messages.
+ * @opcode: Opcode where error occurred.
+ * @line_number: Line number in Monty bytecodes file where error occured.
  *
- * Return: EXIT_FAILURE Always.
+ * Return: (EXIT_FAILURE) always.
  */
 int unknown_op_error(char *opcode, unsigned int line_number)
 {
